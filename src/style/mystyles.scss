@@ -1,0 +1,318 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./todo.scss";
+
+
+// Custom styles
+
+
+
+
+.page-wrapper {
+    display: flex;
+    align-self: stretch;
+    background-color: $bodyback;
+    justify-content: space-around;
+    margin-top: 0;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    border-radius: 1%;
+    padding-top: 10px;
+
+
+}
+
+
+
+    
+.page-wrapper-settings {
+    display: flex;
+    align-self: stretch;
+    background-color: $bodyback;
+    justify-content: space-around;
+    margin-top: 0;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    border-radius: 1%;
+    padding-top: 10px;
+}
+
+
+
+//  Header Styles
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(114, 182, 128);
+    color: $color;
+    height: 59px;
+    width: fill;
+    margin: 0px;
+    @include base-border();
+    padding: 0px;
+    border-radius: 0%;
+
+}
+
+.title {
+    display: flex;
+    justify-content: left;
+    align-content: flex-start;
+    padding-right: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+// Nav
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0%;
+}
+
+.left-side {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-content: baseline;
+    left: 0;
+    height:34px;
+    position: absolute;
+
+    width: 50vw;
+
+
+}
+
+
+#hamBtn2{
+    display:none;
+
+}
+
+
+#new-nav-link-wrapper{
+    display: flex;
+
+}
+.right-side {
+
+    display: flex;
+    justify-content: right;
+    flex-direction: row-reverse;
+    align-content: baseline;
+    position: absolute;
+    right: 0;
+    width: 45vw;
+
+
+}
+
+.spacer {
+    width: 65vw;
+    height: 65vh;
+}
+
+
+
+// Footer Styles
+
+
+
+.footer {
+    background-color: rgba(114, 182, 128, 0.309);
+    height: 30px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: bottom;
+    border: .25px solid rgba(0, 0, 0, 0.522);
+
+}
+
+.footer-wrapper {
+    display: flex;
+    align-content: bottom;
+    flex-direction: column-reverse;
+    position: relative;
+
+}
+
+.li {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+// logo style
+
+.logo {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    height: 60px;
+    margin-bottom: 10px;
+    position: 0;
+    top: 0;
+    left: 0;
+
+}
+
+#name {
+    border: 1px solid transparent;
+    ;
+
+}
+
+.image {
+    display: flex;
+    width: 100px;
+    height: 100px;
+
+}
+
+.todolist{
+    display:flex;
+    justify-content: flex-start;
+}
+
+
+
+// @mobile styles
+
+
+
+
+
+@media (max-width: 48em) {
+    #space{
+        height:500px;
+        // widthL200
+    }
+    .todolist {
+        display: grid;
+        align-items: flex-start;
+        justify-content: center;
+        width: 1px;
+        grid-gap: 0px;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: fit-content;
+        justify-content: start;
+        padding: 0px;
+        margin: 0px;
+        color: white;
+
+
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+
+    }
+
+    #new-nav-link-wrapper{
+        display: none;
+        width: 32px;
+        height:33px;
+    }
+    .title {
+        display: flex;
+        padding-right: 10px;
+        margin-right: 20px;
+    }
+
+
+
+
+    .logo {
+
+        width: 70px;
+        height: 60px;
+        font-size: .8rem;
+
+    }
+
+    .page-wrapper {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        padding-bottom: 100px;
+        padding-top:100px;
+        height:600px;
+        align-content: center;
+        justify-items: flex-start;
+
+    }
+
+    #otherbutton {
+        display: flex;
+        flex-direction: row;
+        width: 25px;
+        height: 25px;
+
+
+    }
+
+    #sidenote {
+        display: flex;
+        width: 100px;
+        height: 75px;
+        font-size: .5rem;
+        margin-top: 45px;
+    }
+
+
+    #hamburger {
+        width: fill;
+        visibility: visible;
+    }
+#navDeskHide{
+    visibility: hidden;
+}
+    .nav-link-wrapper-ham {
+        display: flex;
+        visibility: visible;
+        width: 32px;
+        height:33px;
+    }
+
+
+    .nav-link-wrapper-no-ham{
+        display: flex;
+        visibility: hidden;
+        width: 32px;
+        height:33px;
+    }
+
+
+    #hamBtn2{
+        display:flex;
+
+    }
+}
+
+
+.icon {
+    font-size: 10rem;
+}
+
+
+

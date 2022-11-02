@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+
+
+// handles nav button styles
+@mixin base-border(){
+  padding:10px;
+  border:1px solid black;
+  border-radius: 10%;
+  background-color: rgba(0, 0, 255, 0.188);
+}
+
+
+// handles hover styles
+@mixin base-hover() {
+
+  text-decoration: none;
+    
+  &:hover  {
+      color:rgba(0, 0, 0, 0.722);
+  text-decoration: underline;
+  transition: 0.25s;
+  background-color: white;
+}
+}
