@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import loginImg from "../../../static/assets/images/auth/login.jpg";
 import Login from "../auth/login.js";
-
+//
 export default class Auth extends Component {
     constructor(props) {
         super(props);
