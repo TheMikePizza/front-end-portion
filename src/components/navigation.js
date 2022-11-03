@@ -74,7 +74,7 @@ const NavigationComponent = (props) => {
           dynamicLink("/login", "Login")
         ) : <div className="nav-link-wrapper" >
           {<a className="nav-link-active" id='Sign Out' onClick={handleSignout}>
-            <i className="icon-signout"></i> signout
+            <i className="icon-signout"></i> Signout
           </a>}
         </div>
         }
